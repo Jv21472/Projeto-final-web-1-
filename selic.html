@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Rendimento SELIC</title>
+  <link rel="stylesheet" href="selic.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Rendimento SELIC</h1>
+    <form id="selicForm">
+      <label for="valor">Valor do Investimento (R$):</label>
+      <input type="number" id="valor" step="0.01" placeholder="Ex: 1000.00" required>
+
+      <label for="prazo">Prazo (dias):</label>
+      <input type="number" id="prazo" placeholder="Ex: 365" required>
+
+      <label for="selic">Taxa SELIC (% ao ano):</label>
+      <input type="number" id="selic" step="0.01" placeholder="Ex: 13.75" required>
+
+      <button type="submit">Calcular Rendimento</button>
+    </form>
+    <p id="resultado"></p>
+  </div>
+
+  <script src="selic.js"></script>
+</body>
+</html>

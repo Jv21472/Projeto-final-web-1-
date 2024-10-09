@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Financiamento Veicular</title>
+  <link rel="stylesheet" href="financiamento.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Financiamento Veicular</h1>
+    <form id="financiamentoForm">
+      <label for="valor">Valor do Veículo (R$):</label>
+      <input type="number" id="valor" step="0.01" placeholder="Ex: 50000.00" required>
+
+      <label for="prazo">Prazo (meses):</label>
+      <input type="number" id="prazo" placeholder="Ex: 48" required>
+
+      <label for="juros">Taxa de Juros Mensal (%):</label>
+      <input type="number" id="juros" step="0.01" placeholder="Ex: 1.5" required>
+
+      <button type="submit">Calcular Prestação</button>
+    </form>
+    <p id="resultado"></p>
+  </div>
+
+  <script src="financiamento.js"></script>
+</body>
+</html>

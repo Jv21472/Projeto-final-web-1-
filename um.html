@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação para Juntar 1 Milhão</title>
+  <link rel="stylesheet" href="um.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulação de Tempo para Juntar 1 Milhão</h1>
+    <form id="simulacaoForm">
+      <label for="valorMensal">Valor Aplicado Mensalmente (R$):</label>
+      <input type="number" id="valorMensal" placeholder="Ex: 1000" required>
+
+      <label for="taxaRendimento">Rendimento Mensal (%):</label>
+      <input type="number" id="taxaRendimento" step="0.01" placeholder="Ex: 0.5" required>
+
+      <button type="submit">Simular</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="um.js"></script>
+</body>
+</html>

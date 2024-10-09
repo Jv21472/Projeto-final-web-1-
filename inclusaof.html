@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Funcionários</title>
+  <link rel="stylesheet" href="inclusaof.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Funcionários</h1>
+    <form id="funcionarioForm">
+      <label for="nome">Nome do Funcionário:</label>
+      <input type="text" id="nome" placeholder="Nome do funcionário" required>
+
+      <label for="salarioBase">Salário Base (R$):</label>
+      <input type="number" id="salarioBase" step="0.01" placeholder="Ex: 2500.00" required>
+
+      <label for="he">Horas Extras (R$):</label>
+      <input type="number" id="he" step="0.01" placeholder="Ex: 200.00" required>
+
+      <label for="insalubridade">Insalubridade (%):</label>
+      <input type="number" id="insalubridade" step="0.01" placeholder="Ex: 10" required>
+
+      <label for="periculosidade">Periculosidade (%):</label>
+      <input type="number" id="periculosidade" step="0.01" placeholder="Ex: 30" required>
+
+      <label for="inss">Deduções INSS (R$):</label>
+      <input type="number" id="inss" step="0.01" placeholder="Ex: 150.00" required>
+
+      <label for="irpf">Deduções IRPF (R$):</label>
+      <input type="number" id="irpf" step="0.01" placeholder="Ex: 120.00" required>
+
+      <label for="vt">Vale Transporte (R$):</label>
+      <input type="number" id="vt" step="0.01" placeholder="Ex: 50.00" required>
+
+      <button type="submit">Adicionar Funcionário</button>
+    </form>
+
+    <table id="tabelaFuncionarios">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Salário Base (R$)</th>
+          <th>Horas Extras (R$)</th>
+          <th>Insalubridade (R$)</th>
+          <th>Periculosidade (R$)</th>
+          <th>Deduções INSS (R$)</th>
+          <th>Deduções IRPF (R$)</th>
+          <th>Vale Transporte (R$)</th>
+          <th>Total (R$)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <p id="totais">Totais: Salário Base - R$ 0.00 | HE - R$ 0.00 | Insalubridade - R$ 0.00 | Periculosidade - R$ 0.00 | INSS - R$ 0.00 | IRPF - R$ 0.00 | VT - R$ 0.00 | Total Final - R$ 0.00</p>
+  </div>
+
+  <script src="inclusaof.js"></script>
+</body>
+</html>
